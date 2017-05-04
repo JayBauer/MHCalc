@@ -1,0 +1,10 @@
+<ActionBar title="Details" class="action-bar"></ActionBar>
+<FlexboxLayout flexDirection="column" class="page">
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="weapon.type + '. '"></Label>
+        <Label class="h2" [text]="weapon.name"></Label>
+    </FlexboxLayout>
+    <Label class="h4" [text]="materialList[0].name"></Label>
+    <Label class="h4" [text]="materialList[1].name"></Label>
+    <Label class="h4" [text]="weapon.description"></Label>
+</FlexboxLayout>
