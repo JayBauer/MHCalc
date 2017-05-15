@@ -1,4 +1,4 @@
 # MHCalc
-MHFU damage calculator and database app for Android.
+MHFU damage calculator and database app for Android. Created purely to learn NativeScript with Angular 2 for the Android platform. Will update this README as necessary.
 
-Will expand to other games in the series after this is done. Using it as a means of learning Angular 2 and Nativescript for Android app development.
+Will expand to other games in the series after this is done.
