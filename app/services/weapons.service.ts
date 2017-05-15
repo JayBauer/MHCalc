@@ -9,8 +9,8 @@ export class WeaponList {
     
     private weapons = WEAPONS;
 
-    getWeapon(type: number): Weapon {
-        return this.weapons.filter(weapon => weapon.type === type)[0];
+    getWeapon(name: string): Weapon {
+        return this.weapons.filter(weapon => weapon.name === name)[0];
     }
 
     getWeapons(): Weapon[] {

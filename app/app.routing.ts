@@ -4,11 +4,13 @@ import { Routes } from "@angular/router";
 
 import { WeaponsComponent } from "./components/weapons.component";
 import { WeaponDetailComponent } from "./components/weapon-detail.component";
+import { ItemDetailComponent } from "./components/item-detail.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/weapons", pathMatch: "full" },
+    { path: "item/:id", component: ItemDetailComponent },
     { path: "weapons", component: WeaponsComponent },
-    { path: "weapon/:type", component: WeaponDetailComponent },
+    { path: "weapon/:name", component: WeaponDetailComponent },
 ];
 
 @NgModule({

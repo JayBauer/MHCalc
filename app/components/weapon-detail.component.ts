@@ -23,11 +23,10 @@ export class WeaponDetailComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        const type = +this.route.snapshot.params["type"];
-        this.weapon = this.weaponList.getWeapon(type);
-        console.dump(this.itemList.getItem(1));
+        const name = this.route.snapshot.params["name"];
+        console.log(this.route.snapshot.params["name"]);
+        this.weapon = this.weaponList.getWeapon(name);
 
         this.materialList = this.itemList.getItems(this.weapon.materials);
-        console.dump(this.itemList.getItems(this.weapon.materials));
     }
 }

@@ -4,7 +4,10 @@
         <Label class="h2" [text]="weapon.type + '. '"></Label>
         <Label class="h2" [text]="weapon.name"></Label>
     </FlexboxLayout>
-    <Label class="h4" [text]="materialList[0].name"></Label>
-    <Label class="h4" [text]="materialList[1].name"></Label>
+    <ListView [items]="materialList" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name" class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
     <Label class="h4" [text]="weapon.description"></Label>
 </FlexboxLayout>

@@ -3,7 +3,7 @@
 <StackLayout class="page">
     <ListView [items]="weapons" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/weapon', item.type]" [text]="item.name" class="list-group-item"></Label>
+            <Label [nsRouterLink]="['/weapon', item.name]" [text]="item.name" class="list-group-item"></Label>
         </ng-template>
     </ListView>
 </StackLayout>

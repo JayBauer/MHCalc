@@ -8,6 +8,7 @@ import { WeaponList } from "./services/weapons.service";
 import { ItemList } from "./services/items.service";
 import { WeaponsComponent } from "./components/weapons.component";
 import { WeaponDetailComponent } from "./components/weapon-detail.component";
+import { ItemDetailComponent } from "./components/item-detail.component";
 
 @NgModule({
     bootstrap: [
@@ -21,7 +22,8 @@ import { WeaponDetailComponent } from "./components/weapon-detail.component";
     declarations: [
         AppComponent,
         WeaponsComponent,
-        WeaponDetailComponent
+        WeaponDetailComponent,
+        ItemDetailComponent
     ],
     providers: [
         WeaponList,
